@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:testflutter/Button.dart';
 import 'package:testflutter/InputField.dart';
 
 class InputWrapper extends StatelessWidget {
@@ -7,7 +8,7 @@ class InputWrapper extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.all(30),
       child: Column(
-        children: <Widget[
+        children: <Widget>[
           SizedBox(height: 40,),
           Container(
             decoration: BoxDecoration(
@@ -22,7 +23,7 @@ class InputWrapper extends StatelessWidget {
         style: TextStyle(color: Colors.grey)
         ,),
       SizedBox(height: 40,),
-      Button()
+      Button(),
         ],
       ),
     );

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:testflutter/Header.dart';
 import 'package:testflutter/InputWrapper.dart';
+import 'package:testflutter/SignNav.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -9,14 +11,14 @@ class LoginPage extends StatelessWidget {
         width: double.infinity,
         decoration: BoxDecoration(
           gradient: LinearGradient(begin: Alignment.topCenter, colors: [
-            Colors.cyan.shade500,
-            Colors.cyan.shade400,
+            Colors.grey.shade500,
+            Colors.cyan.shade200,
             Colors.cyan.shade300
           ]),
         ),
         child: Column(
           children: <Widget>[
-            SizedBox(height: 80,)
+            SizedBox(height: 80),
             Header(),
             Expanded(child: Container(
               decoration: BoxDecoration(
@@ -24,10 +26,14 @@ class LoginPage extends StatelessWidget {
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(60),
                     topRight: Radius.circular(60),
-                  )
+                    bottomLeft: Radius.circular(60),
+                    bottomRight: Radius.circular(60),
+                  ),
               ),
               child: InputWrapper(),
-            ))
+            ),
+            ),
+            SizedBox(height: 300),
           ],
         ),
       ),
